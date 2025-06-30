@@ -1,0 +1,58 @@
+json server creation
+
+1) create a folder backend
+2) in the backend terminal , create  package.json using the command "npm init -y"
+3) now for installing json server , command is " npm i json-server"  this will create node modules and package.lock.json
+4) now create index.js (main file) and db,json (for storing) inside the backend file for storing json data
+----------------------------------------------------------------------------------
+in the index.js file (main)
+
+1) import the installed json-server into a variable
+2) create a server using the variable
+3)set up a middleware
+4) set up routes
+5) install cors (npm i cors) and import into a variable
+we need to use all this like implement isong "use" method
+server.use(cors())
+server.use(middelware)
+server.use(routes)
+6) create a port 3000 or we create
+
+process.env.port || 3000
+
+7) start the server now
+
+server.listen( port , ()=>{
+
+})
+
+command npx json-server db.json
+---------------------------------------
+
+Axios for frontend ( in frontend terminal)
+
+npm i axios
+
+services folder (inisde src) in frontend (api configurations and url)
+-----------------------------
+inside services , 3 files serverurl.js , api configuation of axios , and allapis
+
+----------------------------
+in serverURL.js
+
+export const a variable = 'the server url'
+in commonapi.js
+
+--------------------------------------------
+
+in commonapi
+
+import axios
+
+set up the config and axios
+-------------------------------------------------
+
+in allapi.js
+
+import commonapi.js and serverurl.js
+
